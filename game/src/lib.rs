@@ -10,13 +10,17 @@ use fyrox::{
 };
 
 mod player;
+mod zombo;
+
 use player::Player;
+use zombo::Zombo;
 
 pub struct GameConstructor;
 
 impl PluginConstructor for GameConstructor {
     fn register(&self, context: PluginRegistrationContext) {
         context.serialization_context.script_constructors.add::<Player>("Player");
+        context.serialization_context.script_constructors.add::<Zombo>("Zombo");
     }
 
     fn create_instance(

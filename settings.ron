@@ -65,10 +65,37 @@
                 position: [
                     0.0,
                     1.0,
-                    -3.0,
+                    -4.0,
                 ],
                 yaw: 0.0,
                 pitch: 0.0,
+            ),
+            "/home/bunchofcells/Dev/zombo/zombo/data/scene.rgs": (
+                position: [
+                    2.4490788,
+                    2.0746627,
+                    -3.921553,
+                ],
+                yaw: -13.05305,
+                pitch: 0.33366218,
+            ),
+            "/home/bunchofcells/Dev/Rust/zombo/data/scene.rgs": (
+                position: [
+                    2.4490788,
+                    2.0746627,
+                    -3.921553,
+                ],
+                yaw: -13.05305,
+                pitch: 0.33366218,
+            ),
+            "./data/models/scene.rgs": (
+                position: [
+                    0.0,
+                    1.0,
+                    -3.0,
+                ],
+                yaw: 0.043992735,
+                pitch: 0.22887474,
             ),
         },
     ),
@@ -224,6 +251,9 @@
     recent: (
         scenes: [
             "data/scene.rgs",
+            "./data/models/scene.rgs",
+            "/home/bunchofcells/Dev/zombo/zombo/data/scene.rgs",
+            "/home/bunchofcells/Dev/Rust/zombo/data/scene.rgs",
         ],
     ),
 )

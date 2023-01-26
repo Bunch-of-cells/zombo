@@ -5,5 +5,6 @@ use zombo::GameConstructor;
 fn main() {
     let mut executor = Executor::new();
     executor.add_plugin_constructor(GameConstructor);
+    executor.get_window().set_title("Zombo");
     executor.run()
 }

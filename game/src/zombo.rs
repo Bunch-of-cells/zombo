@@ -1,3 +1,4 @@
+
 use fyrox::{
     core::{uuid::{Uuid, uuid}, visitor::prelude::*, reflect::{FieldInfo, Reflect}},
     event::Event, impl_component_provider,
@@ -6,19 +7,19 @@ use fyrox::{
 };
 
 #[derive(Visit, Reflect, Default, Debug, Clone)]
-pub struct Player {
+pub struct Zombo {
     // Add fields here.
 }
 
-impl_component_provider!(Player);
+impl_component_provider!(Zombo);
 
-impl TypeUuidProvider for Player {
+impl TypeUuidProvider for Zombo {
     fn type_uuid() -> Uuid {
-        uuid!("5fc6ad85-388f-4b42-aa1c-bf66b9500b06")
+        uuid!("32e406b5-8917-4d02-abae-bd1c12fbd8e7")
     }
 }
 
-impl ScriptTrait for Player {
+impl ScriptTrait for Zombo {
     fn on_init(&mut self, _context: &mut ScriptContext) {
         // Put initialization logic here.
     }
@@ -44,4 +45,3 @@ impl ScriptTrait for Player {
         Self::type_uuid()
     }
 }
-    
